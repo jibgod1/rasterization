@@ -1,11 +1,10 @@
 #pragma once
-#include "Ray.h"
+#include <glm/glm.hpp>
 class Camera
 {
 public:
 	Camera(glm::vec3 e);
 	~Camera();
-	Ray getRay(float i, float j);
 	glm::mat4 getViewMatrix();
 	glm::mat4 getProjectionMatrix();
 	glm::vec3 getEye();

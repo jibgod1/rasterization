@@ -13,15 +13,13 @@
 #include <glm/glm.hpp>
 #include <glm/gtc/constants.hpp>
 #include <glm/gtc/matrix_transform.hpp>
+#include <glm/gtc/type_ptr.hpp>   
 #include <glm/gtx/string_cast.hpp>
 
 #define _USE_MATH_DEFINES
 #include <math.h>
 
 #include"Camera.h"
-#include"Scene.h"
-#include"Sphere.h"
-#include "Rasterizer.h"
 
 using namespace glm;
 

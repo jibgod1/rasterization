@@ -14,12 +14,6 @@ Camera::~Camera()
     // Destructor implementation
 }
 
-Ray Camera::getRay(float i, float j)
-{
-    glm::vec3 direction = glm::normalize(u * ((i + 0.5f) * (r - l) / nx + l) + 
-        v * ((j + 0.5f) * (t - b) / ny + b) - w * f);
-    return Ray(e, direction);
-}
 
 glm::mat4 Camera::getViewMatrix()
 {
