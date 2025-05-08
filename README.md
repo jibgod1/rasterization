@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/924fffee-4d84-4015-8811-9ddad80c02aa)# rasterization
+# rasterization
 
 ## 개요
 
