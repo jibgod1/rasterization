@@ -1,2 +1,19 @@
-# rasterization
+![image](https://github.com/user-attachments/assets/924fffee-4d84-4015-8811-9ddad80c02aa)# rasterization
 
+## 개요
+
+이 프로젝트는 OpenGL을 사용하여 **삼각형으로 이루어진 구체**를 **rasterization 방식**으로 그리는 간단한 렌더링 파이프라인을 구현한 것입니다.
+
+## 주요 기능
+
+- 단위 구를 삼각형 메쉬로 구성하여 렌더링
+- 모델링 변환을 통해 구를 `(0, 0, -7)` 위치로 이동시키고 반지름을 `2`로 확대
+- 카메라 설정:
+  - 시점(eye): `(0, 0, 0)`
+  - 방향: `u = (1, 0, 0), v = (0, 1, 0), w = (0, 0, 1)`
+- 투영 변환:
+  - 사용자 정의 투영 행렬 사용 (직접 작성한 4x4 perspective matrix)
+  - 파라미터: `l = -0.1`, `r = 0.1`, `b = -0.1`, `t = 0.1`, `n = 0.1`, `f = 1000.0`
+- 뷰포트 변환: 512 x 512 해상도 기준
+
+![image](https://github.com/user-attachments/assets/db927b85-c497-45f1-abbf-17880758da3c)
